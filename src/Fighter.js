@@ -1,11 +1,13 @@
 const MAX_LIFE = 100
 
 class Fighter {
-  constructor(name, strength, dexterity, image) {
+  constructor(name, strength, dexterity, image, x, y) {
     this.name = name;
     this.strength = strength;
     this.dexterity = dexterity;
     this.life = MAX_LIFE;
+    this.x=x;
+    this.y=y;
     this.image = image;
     this.weapon = null;
     this.shield = null;
